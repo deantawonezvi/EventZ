@@ -4,19 +4,16 @@
 
 
 
-<div class="slide1" id="intro">
+<div class="slide1" id="intro1">
 
 <div class="row">
   <div class="large-4 columns left">
 
-          <div class="section">
-            <h4 align="left">Welcome to EventZ.</h4>
-          </div>
-
-
-            <h3  align="left">Find events.</h3>
-            <h3 align="left">Share events.</h3>
-            <h3 align="left">Create events.</h3>
+            <h4 align="left">Welcome to EventZ</h4>
+            <h3 align="left">Find events</h3>
+            <h2 align="left">Share events</h2>
+            <h1 align="left">Create events</h1><br/>
+            <a href="#" class="button large block">Get Started</a>
 
   </div>
   <div class="large-2 columns center">

@@ -13,6 +13,12 @@ body
 /*========================================================================================*/
 /*          Initial Landing Page image
 /*========================================================================================*/
+
+
+/*========================================================================================*/
+/* *NOT USED* Adding an image to the background and keeping it static there
+/*========================================================================================*/
+
 .img{
   height: 100%;
   width: 100%;
@@ -23,6 +29,10 @@ body
   margin-bottom: 0px;
 }
 
+
+/*========================================================================================*/
+/* The first page=section to open when a user visits  the site.
+/*========================================================================================*/
 .slide1 {
     background:  url('../img/birdblackandwhite.jpg') center top no-repeat;
     height: 100%;
@@ -33,36 +43,84 @@ body
     padding-top: 10%;
 }
 
-section {
-  position: absolute;
-  z-index: 50;
-  overflow: auto;
-  background: rgb(234, 234, 234);
-}
 
-#intro h4 {
+/*========================================================================================*/
+/* Top callout box with title -slide1
+/*========================================================================================*/
+#intro1 h4 {
   font-size: 30px;
   color: rgb(28, 34, 36);
   background: rgb(234, 234, 234);
   background: rgba(234, 234, 234, 0.5);
+  max-width: 90%;
 }
 
-#intro h4 span {
-  color: rgb(8, 123, 180);
+h4 {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-#intro h3 {
+
+
+/*========================================================================================*/
+/* Second callout box with title -slide1
+/*========================================================================================*/
+#intro1 h3 {
+  font-size: 28px;
   color: rgb(234, 234, 234);
   background: rgb(28, 34, 36);
   background: rgba(28, 34, 36, 0.5);
-  min-width: 2px;
+  max-width: 51%;
+
 }
 
 h3 {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+
+}
+
+/*========================================================================================*/
+/* Third callout box with title -slide1
+/*========================================================================================*/
+
+#intro1 h2 {
+  font-size: 28px;
   color: rgb(234, 234, 234);
   background: rgb(28, 34, 36);
   background: rgba(28, 34, 36, 0.5);
-  min-width: 2px;
+  max-width: 57%;
+
 }
+
+h2 {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/*========================================================================================*/
+/* Bottom callout box with title -slide1
+/*========================================================================================*/
+
+#intro1 h1 {
+  font-size: 28px;
+  color: rgb(234, 234, 234);
+  background: rgb(28, 34, 36);
+  background: rgba(28, 34, 36, 0.5);
+  max-width: 60%;
+
+}
+
+h1 {
+  padding-top: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
 
 /*========================================================================================*/
