@@ -69,6 +69,10 @@
     #RewriteCond %{REQUEST_FILENAME} !-d
     #RewriteRule ^(.*)$ index.php/$1 [L]
 
+    #Redirect For Added FB Fragment
+    RewriteCond %{QUERY_STRING} ^#_=_.*$
+    RewriteRule ^(.*)$ http://yourdomain.com/$1? [R=301,L]
+
 </IfModule>
 
 <IfModule !mod_rewrite.c>

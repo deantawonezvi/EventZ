@@ -2,7 +2,54 @@
 
 class Login extends CI_Controller {
 
+  public function index(){
+    $data = array('page' => "Welcome",'user' => $this->facebook->get_user());
+    $this->load->view('welcome_message', $data);
 
+  }
+
+  public function confirmIdentity(){
+    $data = array('page' => "Home",'login_url' => $this->facebook->get_login_url());
+    $this->load->view('home_index', $data);
+  }
+
+/*
+  public function confirmIdentity(){
+
+    $code = curPageURL();
+
+    var_dump($code);
+
+    $codeFromFB = str_replace("http://eventzbeta.herokuapp.com/login/confirmIdentity/", "", $code);
+
+    var_dump($codeFromFB);
+
+    $codeAndState = str_replace("?code=", "", $codeFromFB);
+
+    var_dump($codeAndState);
+
+    $fromUri = explode("&state=", $codeAndState);
+
+    var_dump($fromUri);
+
+    $data = $this->facebook->get_authentication_url();
+
+    var_dump($data);
+
+    //if($data['state']!=$fromUri[1]){
+      //  echo "Malicious user :(";
+      //  die();
+   // }else{
+   //   $uri = $data['url']."&code=".$fromUri[0];
+   //   var_dump($uri);
+   //   die();
+   // }
+  }
+
+*/
+
+
+/*
   public function index()
   {
     if($this->session->userdata('logged_in')==FALSE)
@@ -35,6 +82,7 @@ class Login extends CI_Controller {
         redirect('dashboard');
       }
   }
+  */
 
 
   public function _start_session($phonenumber)

@@ -14,7 +14,8 @@
 | path to your installation.
 |
 */
-$config['base_url'] = 'http://localhost/eventz/';
+//$config['base_url']	= 'http://localhost/eventz/';
+$config['base_url'] = 'http://eventzbeta.herokuapp.com/';
 
 /*
 |--------------------------------------------------------------------------
@@ -26,7 +27,7 @@ $config['base_url'] = 'http://localhost/eventz/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +225,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = 'zifund';
+$config['encryption_key'] = 'eventzbeta';
 
 /*
 |--------------------------------------------------------------------------
@@ -357,6 +358,40 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
+
+
+/*
+|------------------------------
+| Facebook SDK/APi config
+|------------------------------
+|
+|
+*/
+$config['facebook']['api_id'] = '570596709733222';
+$config['facebook']['app_secret'] = '83febdc15d144c41bb137be40b6ed310';
+$config['facebook']['redirect_url'] = 'http://eventzbeta.herokuapp.com/login/confirmIdentity/';
+$config['facebook']['permissions'] = array(
+    'email',
+    //persons email address
+    'public_profile',
+    //comes by defalt
+    /*
+     provides app with a persons:
+      id
+      name
+      first_name
+      last_name
+      link
+      gender
+      locale
+      age_range
+    */
+    //'user_friends'
+    //Provides access the list of friends that also use your app.
+      'user_about_me'
+
+);
+$config['facebook']['access_token'] = 'ACCESS_TOKEN';
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */

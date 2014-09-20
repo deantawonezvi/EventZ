@@ -37,7 +37,7 @@
 |
 */
 
-$autoload['packages'] = array('couchdb');
+$autoload['packages'] = array();
 
 
 /*
@@ -52,7 +52,7 @@ $autoload['packages'] = array('couchdb');
 |	$autoload['libraries'] = array('database', 'session', 'xmlrpc');
 */
 
-$autoload['libraries'] = array('form_validation','session');
+$autoload['libraries'] = array('facebook');
 
 
 /*
@@ -64,7 +64,8 @@ $autoload['libraries'] = array('form_validation','session');
 |	$autoload['helper'] = array('url', 'file');
 */
 
-$autoload['helper'] = array('form','url','tinzwe');
+$autoload['helper'] = array('fb_autoload','url','currpageurl');
+//$autoload['helper'] = array();
 
 
 /*
@@ -109,7 +110,7 @@ $autoload['language'] = array();
 |
 */
 
-$autoload['model'] = array('app_model');
+$autoload['model'] = array();
 
 
 /* End of file autoload.php */

@@ -28,6 +28,7 @@
 
   <script src="<?php echo $url?>client_side/js/vendor/modernizr.js"></script>
 
+  <script src="<?php echo $url?>client_side/js/app.js"></script>
 </head>
 <body>
 
